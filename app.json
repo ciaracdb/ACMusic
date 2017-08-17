@@ -1,0 +1,22 @@
+{
+    "name": "ACMusic",
+    "description": "A python discord bot.",
+    "image": "heroku/python",
+    "repository": "https://github.com/ciaracdb/ACMusic",
+    "keywords": [
+        "python",
+        "django",
+        "discord"
+    ],
+    "addons": [
+        "heroku-postgresql"
+    ],
+    "environments": {
+        "test": {
+            "scripts": {
+                "test-setup": "python manage.py collectstatic --noinput",
+                "test": "python manage.py test"
+            }
+        }
+    }
+}
