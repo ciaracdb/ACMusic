@@ -12,7 +12,7 @@ from bot.DiscordClient import DiscordClient
 
 if __name__ == '__main__':
     if not discord.opus.is_loaded():
-        discord.opus.load_opus('/tmp/build_ef1c7a188519376e343b060feead93d8/.heroku/vendor/lib/libopus.so')
+        discord.opus.load_opus('./.heroku/vendor/lib/libopus.so')
 
     client = DiscordClient()
     client.run(os.environ.get('BOT_TOKEN'))
