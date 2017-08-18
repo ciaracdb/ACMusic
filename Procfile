@@ -1,2 +1,2 @@
-web: gunicorn gettingstarted.wsgi --log-file -
+web: gunicorn acmusic.wsgi --log-file -
 worker: python bot.py
