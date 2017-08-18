@@ -1,8 +1,5 @@
-import re
-
 from bot.commands.Command import Command
-from bot.players.YoutubePlayer import YoutubePlayer
 
-class PauseCommand(Command):
+class ResumeCommand(Command):
     async def execute(self, message):
-        self.client.voiceUser.player.pause()
+        self.client.voiceUser.player.resume()

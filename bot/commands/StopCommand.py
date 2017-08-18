@@ -1,5 +1,5 @@
 from bot.commands.Command import Command
 
-class PauseCommand(Command):
+class StopCommand(Command):
     async def execute(self, message):
-        self.client.voiceUser.player.pause()
+        self.client.voiceUser.player.stop()
