@@ -1,14 +1,14 @@
 let React = require('react');
 let ReactDOM = require('react-dom');
 
-let Hello = React.createClass ({
-    render: function() {
+class App extends React.Component {
+    render() {
         return (
             <h1>
-            Hello, React!
+                Hello, React!
             </h1>
         )
     }
-});
+}
 
-ReactDOM.render(<Hello />, document.getElementById('container'));
+ReactDOM.render(<App/>, document.getElementById('container'));

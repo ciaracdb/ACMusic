@@ -3,6 +3,10 @@
     "version": "1.0.0",
     "description": "discord music bot",
     "main": "mainsite/static/reactapp/index.js",
+    "engines": {
+        "node": "6.11.2",
+        "npm": "3.10.10"
+    },
     "scripts": {
         "preinstall": "npm install -g webpack",
         "build": "webpack --config webpack.config.js",
