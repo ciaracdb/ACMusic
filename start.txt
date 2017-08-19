@@ -6,3 +6,6 @@ heroku local -f Procfile.windows
 #Linux
 source venv/bin/activate
 heroku local
+
+python manage.py makemigrations
+python manage.py migrate

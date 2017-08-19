@@ -1,16 +1,20 @@
 from django.conf.urls import include, url
 
 from django.contrib import admin
+from rest_framework import routers
+
+from dbapi import views
+
 admin.autodiscover()
 
-import hello.views
 
-# Examples:
-# url(r'^$', 'gettingstarted.views.home', name='home'),
-# url(r'^blog/', include('blog.urls')),
+router = routers.DefaultRouter()
+router.register(r'users', views.UserViewSet)
+router.register(r'groups', views.GroupViewSet)
 
 urlpatterns = [
-    url(r'^$', hello.views.index, name='index'),
-    url(r'^db', hello.views.db, name='db'),
+    url(r'^dbapi/', include('dbapi.urls')),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^', include(router.urls)),
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
