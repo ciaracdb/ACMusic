@@ -13,6 +13,7 @@ router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
 
 urlpatterns = [
+    url(r'^', include('mainsite.urls')),
     url(r'^dbapi/', include('dbapi.urls')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^', include(router.urls)),

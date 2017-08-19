@@ -1,6 +1,11 @@
-{% extends "base.html" %}
-{% load staticfiles %}
-
-{% block content %}
-
-{% endblock %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ACMusic</title>
+</head>
+<body>
+<div id="container"></div>
+{% load render_bundle from webpack_loader %}
+{% render_bundle 'main' %}
+</body>
+</html>

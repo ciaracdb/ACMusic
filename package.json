@@ -1,0 +1,39 @@
+{
+    "name": "acmusic",
+    "version": "1.0.0",
+    "description": "discord music bot",
+    "main": "mainsite/static/reactapp/index.js",
+    "scripts": {
+        "preinstall": "npm install -g webpack",
+        "build": "webpack --config webpack.config.js",
+        "postinstall": "npm run build",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ciaracdb/ACMusic.git"
+    },
+    "keywords": [
+        "discord",
+        "bot",
+        "react",
+        "django"
+    ],
+    "author": "Alexandre CHENIEUX",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/ciaracdb/ACMusic/issues"
+    },
+    "homepage": "https://github.com/ciaracdb/ACMusic#readme",
+    "dependencies": {
+        "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.2",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-preset-react": "^6.24.1",
+        "jquery": "^3.2.1",
+        "react": "^15.6.1",
+        "react-dom": "^15.6.1",
+        "webpack": "^3.5.5",
+        "webpack-bundle-tracker": "^0.2.0"
+    }
+}

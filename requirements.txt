@@ -9,3 +9,4 @@ aiohttp
 websockets
 PyNaCl
 youtube_dl
+django-webpack-loader
