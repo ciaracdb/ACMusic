@@ -2,10 +2,12 @@
 <html>
 <head>
     <title>ACMusic</title>
+    <script type="text/javascript" src="/static/js.cookie.js"></script>
 </head>
 <body>
 <div id="container"></div>
 {% load render_bundle from webpack_loader %}
 {% render_bundle 'main' %}
+
 </body>
 </html>

@@ -1,4 +1,3 @@
-pip install -r requirements.txt
 #Windows
 venv\Scripts\activate.bat
 heroku local -f Procfile.windows
@@ -6,6 +5,10 @@ heroku local -f Procfile.windows
 #Linux
 source venv/bin/activate
 heroku local
+
+pip install -r requirements.txt
+
+python manage.py createsuperuser
 
 python manage.py makemigrations
 python manage.py migrate

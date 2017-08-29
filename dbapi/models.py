@@ -9,5 +9,5 @@ class Playlist(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=200, default='')
     url = models.CharField(max_length=200, default='')
-    songs = models.ManyToManyField(Song)
+    songs = models.ManyToManyField(Song, default=[])
     votes = models.IntegerField(default=0)
