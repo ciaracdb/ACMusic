@@ -4,15 +4,12 @@ staticfiles/
 .env
 db.sqlite3
 *.log
+Pipfile.lock
 
 node_modules/
 
-/Pipfile
-
 .idea/
 acmusic/__pycache__/
-hello/__pycache__/
-hello/migrations/__pycache__/
 
 webpack-stats.json
 reactapp/bundles/

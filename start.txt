@@ -1,12 +1,13 @@
+pipenv --three
+pipenv install
+
+pipenv shell
+
 #Windows
-venv\Scripts\activate.bat
 heroku local -f Procfile.windows
 
 #Linux
-source venv/bin/activate
 heroku local
-
-pip install -r requirements.txt
 
 python manage.py createsuperuser
 
